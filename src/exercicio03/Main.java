@@ -26,18 +26,18 @@ public class Main {
         //impressão da distância entre os dois pontos
         System.out.println();
 
-        System.out.println("Distância de P1 para P2 "+fm.format(p1.calcularDistancia(p2)));
-        System.out.println("Distância de P2 para P1 "+fm.format(p2.calcularDistancia(p1)));
+        System.out.println("Distância de P1 para P2: "+fm.format(p1.calcularDistancia(p2)));
+        System.out.println("Distância de P2 para P1: "+fm.format(p2.calcularDistancia(p1)));
 
         //Impressão da distância de cada ponto até a origem
         System.out.println();
-        System.out.println("Distância de P1 até a origem "+fm.format(p1.calcularDistanciaOrigem()));
-        System.out.println("Distância de P2 até a origem "+fm.format(p2.calcularDistanciaOrigem()));
+        System.out.println("Distância de P1 até a origem: "+fm.format(p1.calcularDistanciaOrigem()));
+        System.out.println("Distância de P2 até a origem: "+fm.format(p2.calcularDistanciaOrigem()));
 
         //Ponto mais Proximo da origem
         System.out.println();
-        System.out.println("Ponto mais próximo da origem");
-        Ponto aux = p1.maisPertoDaOrigem(p1,p2);
+        System.out.println("Ponto mais próximo da origem:");
+        Ponto aux = Ponto.maisPertoDaOrigem(p1, p2);
         System.out.println(aux.retornarDadosFormatados());
 
     }

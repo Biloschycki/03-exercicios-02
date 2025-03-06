@@ -31,7 +31,7 @@ public class Ponto {
     }
     //Método que receba como parâmetro dois pontos e retorne o ponto que está mais
     //próximo da origem.
-    public Ponto maisPertoDaOrigem(Ponto p1, Ponto p2){
+    public static Ponto maisPertoDaOrigem(Ponto p1, Ponto p2){
         double dp1 = p1.calcularDistanciaOrigem();
         double dp2 = p2.calcularDistanciaOrigem();
         if(dp1<dp2){
